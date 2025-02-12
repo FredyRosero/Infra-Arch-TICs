@@ -1,0 +1,59 @@
+| Category               | ID      | Description                                                                                                                               | Yes/No | Justification |
+| :--------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------- | :----- | :------------ |
+| Operational Excellence | OPS 1   | How do you determine what your priorities are?                                                                                            |        |               |
+| nan                    | OPS 2   | How do you structure your organization to support your business outcomes?                                                                 |        |               |
+| nan                    | OPS 3   | How does your organizational culture support your business outcomes?                                                                      |        |               |
+| nan                    | OPS 4   | How do you implement observability in your workload?                                                                                      |        |               |
+| nan                    | OPS 5   | How do you reduce defects, ease remediation, and improve flow into production?                                                            |        |               |
+| nan                    | OPS 6   | How do you mitigate deployment risks?                                                                                                     |        |               |
+| nan                    | OPS 7   | How do you know that you are ready to support a workload?                                                                                 |        |               |
+| nan                    | OPS 8   | How do you utilize workload observability in your organization?                                                                           |        |               |
+| nan                    | OPS 9   | How do you understand the health of your operations?                                                                                      |        |               |
+| nan                    | OPS 10  | How do you manage workload and operations events?                                                                                         |        |               |
+| nan                    | OPS 11  | How do you evolve operations?                                                                                                             |        |               |
+| Security               | SEC 1   | How do you securely operate your workload?                                                                                                |        |               |
+| nan                    | SEC 2   | How do you manage authentication for people and machines?                                                                                 |        |               |
+| nan                    | SEC 3   | How do you manage permissions for people and machines?                                                                                    |        |               |
+| nan                    | SEC 4   | How do you detect and investigate security events?                                                                                        |        |               |
+| nan                    | SEC 5   | How do you protect your network resources?                                                                                                |        |               |
+| nan                    | SEC 6   | How do you protect your compute resources?                                                                                                |        |               |
+| nan                    | SEC 7   | How do you classify your data?                                                                                                            |        |               |
+| nan                    | SEC 8   | How do you protect your data at rest?                                                                                                     |        |               |
+| nan                    | SEC 9   | How do you protect your data in transit?                                                                                                  |        |               |
+| nan                    | SEC 10  | How do you anticipate, respond to, and recover from incidents?                                                                            |        |               |
+| nan                    | SEC 11  | How do you incorporate and validate the security properties of applications throughout the design, development, and deployment lifecycle? |        |               |
+| Reliability            | REL 1   | How do you manage Service Quotas and constraints?                                                                                         |        |               |
+| nan                    | REL 2   | How do you plan your network topology?                                                                                                    |        |               |
+| nan                    | REL3    | How do you design your workload service architecture?                                                                                     |        |               |
+| nan                    | REL 4   | How do you design interactions in a distributed system to prevent failures?                                                               |        |               |
+| nan                    | REL 5   | How do you design interactions in a distributed system to mitigate or withstand failures?                                                 |        |               |
+| nan                    | REL 6   | How do you monitor workload resources?                                                                                                    |        |               |
+| nan                    | REL7    | How do you design your workload to adapt to changes in demand?                                                                            |        |               |
+| nan                    | REL 8   | How do you implement change?                                                                                                              |        |               |
+| nan                    | REL9    | How do you back up data?                                                                                                                  |        |               |
+| nan                    | REL 10  | How do you use fault isolation to protect your workload?                                                                                  |        |               |
+| nan                    | REL 11  | How do you design your workload to withstand component failures?                                                                          |        |               |
+| nan                    | REL 12  | How do you test reliability?                                                                                                              |        |               |
+| nan                    | REL 13  | How do you plan for disaster recovery (DR)?                                                                                               |        |               |
+| Performance Efficiency | PERF 1  | How do you select appropriate cloud resources and architecture for your workload?                                                         |        |               |
+| nan                    | PERF 2  | How do you select and use compute resources in your workload?                                                                             |        |               |
+| nan                    | PERF 3  | How do you store, manage, and access data in your workload?                                                                               |        |               |
+| nan                    | PERF 4  | How do you select and configure networking resources in your workload?                                                                    |        |               |
+| nan                    | PERF 5  | How do your organizational practices and culture contribute to performance efficiency in your workload?                                   |        |               |
+| Cost Optimization      | COST 1  | How do you implement cloud financial management?                                                                                          |        |               |
+| nan                    | COST 2  | How do you govern usage?                                                                                                                  |        |               |
+| nan                    | COST 3  | How do you monitor your cost and usage?                                                                                                   |        |               |
+| nan                    | COST 4  | How do you decommission resources?                                                                                                        |        |               |
+| nan                    | COST 5  | How do you evaluate cost when you select services?                                                                                        |        |               |
+| nan                    | COST 6  | How do you meet cost targets when you select resource type, size and number?                                                              |        |               |
+| nan                    | COST 7  | How do you use pricing models to reduce cost?                                                                                             |        |               |
+| nan                    | COST 8  | How do you plan for data transfer charges?                                                                                                |        |               |
+| nan                    | COST 9  | How do you manage demand, and supply resources?                                                                                           |        |               |
+| nan                    | COST 10 | How do you evaluate new services?                                                                                                         |        |               |
+| nan                    | COST 11 | How do you evaluate the cost of effort?                                                                                                   |        |               |
+| Sustainability         | SUS 1   | How do you select Regions for your workload?                                                                                              |        |               |
+| nan                    | SUS 2   | How do you align cloud resources to your demand?                                                                                          |        |               |
+| nan                    | SUS 3   | How do you take advantage of software and architecture patterns to support your sustainability goals?                                     |        |               |
+| nan                    | SUS 4   | How do you take advantage of data management policies and patterns to support your sustainability goals?                                  |        |               |
+| nan                    | SUS 5   | How do you select and use cloud hardware and services in your architecture to support your sustainability goals?                          |        |               |
+| nan                    | SUS 6   | How do your organizational processes support your sustainability goals?                                                                   |        |               |
