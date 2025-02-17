@@ -1,0 +1,71 @@
+@startuml EHR Healthcare - AWS Architecture
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v19.0/dist
+!include AWSPuml/AWSCommon.puml
+
+!include AWSPuml/General/Users.puml
+
+' Componentes de Red y Seguridad
+!include AWSPuml/NetworkingContentDelivery/APIGateway.puml
+!include AWSPuml/NetworkingContentDelivery/Route53.puml
+!include AWSPuml/NetworkingContentDelivery/CloudFront.puml
+!include AWSPuml/SecurityIdentityCompliance/Cognito.puml
+!include AWSPuml/SecurityIdentityCompliance/WAF.puml
+!include AWSPuml/SecurityIdentityCompliance/Shield.puml
+!include AWSPuml/SecurityIdentityCompliance/KeyManagementService.puml
+!include AWSPuml/ManagementGovernance/CloudTrail.puml
+
+' Cómputo y Contenedores
+!include AWSPuml/Containers/ElasticContainerService.puml
+!include AWSPuml/Containers/Fargate.puml
+!include AWSPuml/Compute/Lambda.puml
+
+' Almacenamiento y Bases de Datos
+!include AWSPuml/Storage/SimpleStorageService.puml
+!include AWSPuml/Database/RDS.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/Analytics/Redshift.puml
+!include AWSPuml/ArtificialIntelligence/HealthLake.puml
+
+' Integración y Procesamiento de Datos
+!include AWSPuml/Analytics/Glue.puml
+!include AWSPuml/Analytics/QuickSight.puml
+
+left to right direction
+
+' Usuarios finales accediendo al sistema
+Users(pacientes, "Pacientes y Médicos", "Usuarios de la aplicación")
+Route53(dns, "Route 53", "DNS para resolución de nombres")
+CloudFront(cdn, "CloudFront", "Content Delivery Network (CDN)")
+WAF(waf, "AWS WAF", "Web Application Firewall")
+Shield(ddos, "AWS Shield", "DDoS Protection")
+
+pacientes --> dns
+dns --> cdn
+cdn --> waf
+waf --> ddos
+
+' Autenticación y API Gateway
+Cognito(auth, "Amazon Cognito", "User Authentication")
+APIGateway(api, "Amazon API Gateway", "Gestión de APIs")
+
+ddos --> auth
+ddos --> api
+
+' Backend de Aplicaciones
+ElasticContainerService(ecsCluster, "Amazon ECS", "Cluster de contenedores")
+Fargate(fargateTasks, "AWS Fargate", "Ejecución sin servidor de contenedores")
+Lambda(lambdaFunctions, "AWS Lambda", "Ejecución de funciones serverless")
+
+api --> ecsCluster
+ecsCluster --> fargateTasks
+api --> lambdaFunctions
+
+' Almacenamiento de Datos
+SimpleStorageService(storage, "Amazon S3", "Almacenamiento de documentos médicos")
+RDS(rdsCluster, "Amazon RDS", "Base de datos relacional para pacientes")
+DynamoDB(dynamoDB, "Amazon DynamoDB", "Base de datos NoSQL para metadatos")
+HealthLake(healthLake, "AWS HealthLake", "Almacenamiento y análisis de datos médicos")
+
+fargateTasks --> rdsCluster
+fargateTasks --> dynamo

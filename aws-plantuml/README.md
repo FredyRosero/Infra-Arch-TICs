@@ -1,0 +1,1 @@
+[](https://github.com/awslabs/aws-icons-for-plantuml/blob/aa30729ab2e125f13526020fa98ed5eb0ed86cc1/AWSSymbols.md)
