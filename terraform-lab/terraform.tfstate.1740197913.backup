@@ -1,0 +1,84 @@
+{
+  "version": 4,
+  "terraform_version": "1.10.5",
+  "serial": 11,
+  "lineage": "2ab4ffee-25f9-3ed0-71e9-373d4f9e9fc3",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": false,
+            "allow_merge_commit": true,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": null,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Repository created via Terraform",
+            "etag": "W/\"30e338a5aa5a3cff4105f9abdd4c941f03e40676f1cfef0fa2a7f16ef4cd2fe5\"",
+            "full_name": "FredyRosero/Infra-Arch-TICs-terraform-lab",
+            "git_clone_url": "git://github.com/FredyRosero/Infra-Arch-TICs-terraform-lab.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/FredyRosero/Infra-Arch-TICs-terraform-lab",
+            "http_clone_url": "https://github.com/FredyRosero/Infra-Arch-TICs-terraform-lab.git",
+            "id": "Infra-Arch-TICs-terraform-lab",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": null,
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "Infra-Arch-TICs-terraform-lab",
+            "node_id": "R_kgDON9k8Ng",
+            "pages": [],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 936983606,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:FredyRosero/Infra-Arch-TICs-terraform-lab.git",
+            "svn_url": "https://github.com/FredyRosero/Infra-Arch-TICs-terraform-lab",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": false,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
